@@ -16,6 +16,6 @@ public class FibonacciService {
     }
     
     public List<Integer> calculateFiboacci(int sequence, Calculator calculator){
-	return calculator.getSequence(sequence);
+	return calculator.getSequencefibonacci(sequence);
     }
 }
