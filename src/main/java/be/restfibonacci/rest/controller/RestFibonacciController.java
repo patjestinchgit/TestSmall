@@ -34,7 +34,7 @@ public class RestFibonacciController
 		this.calculator = new Calculator();
     }
     
-    @RequestMapping(path = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(path = "{id}", method = RequestMethod.GET)
     public ArrayList<Integer> getFibonacci(@PathVariable Long id) 
     {	
         return (ArrayList<Integer>) fibonacciservice.calculateFiboacci((id.intValue()),  calculator);

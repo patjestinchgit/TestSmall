@@ -13,7 +13,7 @@ public class Calculator {
     public List<Integer> getSequencefibonacci(int sequence) {
 	if(sequencefibonacci.isEmpty() == false) sequencefibonacci.clear();
 	sequencefibonacci = calculateSequence(sequence);
-	return getSequencefibonacci(sequence);
+	return sequencefibonacci;
     }
     
     private List<Integer> calculateSequence(int sequence) {
@@ -29,7 +29,6 @@ public class Calculator {
 	    n1 = n2;
 	    n2 = n3;
 	}
-	System.out.println(" Size "+sequencefibonaccilocal.size());
 	return sequencefibonaccilocal;
     }
 
